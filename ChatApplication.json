@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "cfff65a5-356f-4420-b603-73683568a4c9",
+		"name": "Chat Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6892023"
+	},
+	"item": [
+		{
+			"name": "Fetch All Users except the logged in user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fetchAllUsers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fetchAllUsers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Groups that the logged in user belongs to",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fetchAllGroups/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fetchAllGroups",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all the messages belonging to the group id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/listmessage/group/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listmessage",
+						"group",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all the messages sent from one user to other user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/listmessage/1/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listmessage",
+						"1",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
