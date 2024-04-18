@@ -16,7 +16,7 @@ function validateForm() {
         }else if(username=="vinod"){
             localStorage.setItem("userId", 4);
         }else{
-            alert("Wrong password");
+            alert("Wrong username");
             return false;
         }
 
